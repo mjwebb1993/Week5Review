@@ -2,25 +2,22 @@
   --text: #f0f6fc;
   --background: #161b22;
 }
-/* Code to show CSS Element Positioning, specifically absolute and fixed */
-.position {
-  background-color: var(--text);
-  /* display: none; */
-  position:static;
-}
-
 /* Code to show Flexbox */
-/*  This styling sets up the flex container. Remember, `display: flex;` sets up so that the DIRECT children of that element/container become flex items */
+/*  This styling sets up the flex container. Remember, `display: flex;` enables the DIRECT children of that element/container to be flex items */
+
+/* Activity 1 */
+/* Set Up a Flex Container so that the items within .blockDivs are flex items oriented in a vertical direction */
+
 .blockDivs {
   color: var(--text);
-  /* display: flex;
-  flex-direction: row; */
+  padding: 10px;
 }
-/* this adds a border around the flex items */
 .blockDivs > * {
-  /* border: 1px solid; */
+  border: 1px solid;
   padding: 0.5rem 0.5rem;
 }
+
+
 header {
   background: url(assets/img/photo-1528334713982-2d1fe11a157a.jpg) center center no-repeat;  background-size: cover;
   display: flex;
@@ -28,6 +25,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 40vh;
+
 }
 
 #jumbotron{
@@ -77,6 +75,7 @@ main h2,h1,p{
     display: flex;
     align-items: center;
     flex-direction: column;
+
   }
 
   nav > i {
@@ -117,7 +116,12 @@ main h2,h1,p{
     display: none;
   }
 }
-
+/* Code to show CSS Element Positioning, specifically absolute and fixed */
+.position {
+  background-color: var(--text);
+  display: none;
+  /* position:fixed; */
+}
 /* Code below this line is purely for stylization purposes, but feel free to ask questions about certain aspects */
 body {
   background-color: var(--background);
